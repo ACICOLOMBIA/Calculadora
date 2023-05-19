@@ -1,8 +1,9 @@
 body {
-  zoom: 75%;
-}
-
-header {
+    zoom: 75%;
+  }
+  
+  /* Estilos generales */
+  header {
     background-color: #f1f1f1;
     color: #fff;
     display: flex;
@@ -11,7 +12,7 @@ header {
     padding: 20px;
     height: 80px;
   }
-
+  
   header div {
     display: flex;
     justify-content: space-between;
@@ -52,24 +53,23 @@ header {
     background-color: #ddd;
   }
   
-  
   main div {
     margin-top: 5px;
     margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 100px;
   }
-
+  
   main h1 {
     text-align: left;
-    font-family:sans-serif;
-    color:rgb(228, 13, 13);
+    font-family: sans-serif;
+    color: rgb(228, 13, 13);
   }
   
   main h2 {
     text-align: left;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(75, 75, 75);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(75, 75, 75);
     font-size: small;
     font-weight: 100;
   }
@@ -78,97 +78,68 @@ header {
     font-family: sans-serif;
   }
   
-  .div1, .div2 {
+  .div1,
+  .div2 {
     margin-top: 10px;
     margin-right: 40px;
     margin-bottom: 30px;
     margin-left: 40px;
   }
-
-  .div1, .div2 {
+  
+  .div1,
+  .div2 {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
   }
-
-  .div1 .div2{
+  
+  .div1 .div2 {
     width: 40%;
   }
-
+  
   .div4 {
     margin-top: 10px;
     margin-right: 20px;
     margin-bottom: 30px;
     margin-left: 40px;
   }
-
-
+  
   h3 {
     text-align: left;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(75, 75, 75);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(75, 75, 75);
     font-size: small;
     font-weight: 100;
   }
 
   input[type="text"],
+input[type="range"],
+input[type="percent"],
+input[type="mail"],
+input[type="number"] {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px;
+  width: 200px;
+}
+
+/* Estilos responsive */
+@media only screen and (max-width: 768px) {
+  /* Modifica los estilos para pantallas más pequeñas */
+  input[type="text"],
   input[type="range"],
   input[type="percent"],
   input[type="mail"],
   input[type="number"] {
-    font-size: 16px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 10px;
-    width: 200px;
+    width: 100%;
   }
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-  input[type="range"]::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-  input[type="range"]::-ms-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-
   
-  input[type=text], input[type=range], input[type=percent], input[type=mail], input[type="number"] {
-    display: inline-block;
-    width: calc(100% - 100px);
-    box-sizing: border-box;
+  .div1,
+  .div2,
+  .div4 {
+    margin: 10px;
   }
-
-
-  .submit {
-    background-color: #df1111;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .div2 {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: bold;
-    color: #e01818;
-  }
+}
