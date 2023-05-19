@@ -1,0 +1,174 @@
+body {
+  zoom: 75%;
+}
+
+header {
+    background-color: #f1f1f1;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 80px;
+  }
+
+  header div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  img {
+    float: left;
+  }
+  
+  header img {
+    width: 200px;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  header a:first-child {
+    margin-left: 0;
+  }
+  
+  header a:hover {
+    background-color: #ddd;
+  }
+  
+  
+  main div {
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+  }
+
+  main h1 {
+    text-align: left;
+    font-family:sans-serif;
+    color:rgb(228, 13, 13);
+  }
+  
+  main h2 {
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(75, 75, 75);
+    font-size: small;
+    font-weight: 100;
+  }
+  
+  label {
+    font-family: sans-serif;
+  }
+  
+  .div1, .div2 {
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+
+  .div1, .div2 {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  .div1 .div2{
+    width: 40%;
+  }
+
+  .div4 {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+
+
+  h3 {
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(75, 75, 75);
+    font-size: small;
+    font-weight: 100;
+  }
+
+  input[type="text"],
+  input[type="range"],
+  input[type="percent"],
+  input[type="mail"],
+  input[type="number"] {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 200px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  
+  input[type=text], input[type=range], input[type=percent], input[type=mail], input[type="number"] {
+    display: inline-block;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+  }
+
+
+  .submit {
+    background-color: #df1111;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .div2 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    color: #e01818;
+  }

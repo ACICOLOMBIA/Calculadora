@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>ACI - Calculadora Hipotecaria</title>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+    <div>
+        <!-- Logotipo -->
+        <img src="logo.png" alt="Logo de Mi Página Web">
+        
+        <!-- Botones -->
+        <nav style="float: right; margin-left: 100px;">
+        <a href="libre inversion.html">CREDITO DE LIBRE INVERSION</a>
+        <a href="ingresos.html">CREDITO DE VIVIENDA SEGUN INGRESOS</a>
+        <a href="valor de credito.html">CREDITO DE VIVIENDA SEGUN VALOR DEL CREDITO</a>
+
+        </nav>
+    </div>
+    <div>
+        <nav style="float: right; margin-right: 100px;">
+            <a href="https://www.acicolombia.com.co" style="background-color: #e73131; color: white; border-radius: 20px;">Volver a la página principal</a>
+        </nav>
+    </div>
+</header>
+  
+  <!-- Contenido de la página -->
+  <main>
+    <div>
+        <div>
+            <!--Contenido del título-->
+            <h1>SIMULA TU CUOTA HIPOTECARIA SEGÚN EL VALOR DEL CRÉDITO</h1>
+            <H2>Queremos ayudarte a encontrar la mejor tasa del mercado, para ello contamos con 6 bancos aliados. <br><br> Ten en cuenta que según el decreto 257 de 2001, la primera cuota del crédito no podrá representar más del treinta por ciento (30%) de los ingresos familiares. En los créditos destinados a la financiación de vivienda de interés social, la primera cuota del crédito no podrá representar más del cuarenta por ciento (40%) de los ingresos familiares.</H2>
+        </div>
+        <div class="div1" id="validacion" value="hipo">
+
+                <label for="valor-credito"><b>Valor del crédito: </b></label>
+                <input type="text" id="valor-credito" name="valor-credito" required placeholder="Digite el valor del crédito" step="any" onchange="mostrarValor()" />
+                <br>
+
+                <label for="rango" ><b>Plazo en años: </b></label>
+                <span id="valorSeleccionado"></span>
+                <input type="range" id="rango" name="rango" min="5" max="20" required placeholder="" oninput="mostrarValor()" value="20">
+                <br>
+
+                <label for="tasa-interes"><b>Tasa de Interés E.A.: %</b></label>
+                <input type="number" id="tasa-interes" name="tasa-interes" min="5" max="50" value="18" required placeholder="Digite la tasa de interés E.A.">
+                <br>
+            
+
+                <label for="nombre"><b>Nombre Completo</b></label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Digite su Nombre Completo">
+                <br>
+            
+
+                <label for="telefono"><b>Número de celular</b></label>
+                <input type="number" id="telefono" name="telefono" required placeholder="Digite su número de teléfono" step="1" min="0">
+                <br>
+                
+
+                <label for="mail"><b>Correo Electrónico</b></label>
+                <input type="mail" id="mail" name="mail" required placeholder="Digite su correo electrónico" step="1" min="0">
+                <br>
+                
+
+                <label>
+                    <input type="radio" id="terminos" name="terminos" value="false"> Acepto los términos y condiciones
+                </label>
+                <label>
+                    <input type="radio" id="abeas-data" name="abeas-data" value="false"> Acepto politica de tratamiento de proteccion de datos
+                </label>
+                <br>
+                <br>
+
+                <button id="boton-enviar" class="submit" >Enviar</button>
+            </div>        
+        <div class="div2">
+            <div class="div3" id="resultado">
+            </div>
+            <div class="div4">
+                <canvas id="grafica"></canvas>
+            </div>
+        </div>
+        <div class="div5"><h3>Para realizar este calculo, se basó un pago de seguros con base en 8% sobre la cuota, no obstante, la misma puede variar dependiendo de las políticas del banco o prestador. De igual manera el valor de la cuota es un aproximado, este mismo no obliga a las entidades financieras a aprobar un crédito bajo estas condiciones.</h3></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="consulta.js"></script>
+<body>
+    
+</body>
+</html>
