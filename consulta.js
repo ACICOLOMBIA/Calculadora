@@ -20,8 +20,16 @@ botonEnviar.addEventListener('click', function() {
         taza: input3,
         tel: input5,
         mail: input6
-  })
-
+        })
+    
+    .then(function(response) {
+      console.log('Correo electrónico enviado correctamente', response);
+      // Aquí puedes mostrar un mensaje de éxito al usuario o realizar cualquier otra acción después de enviar el correo electrónico.
+    })
+    .catch(function(error) {
+      console.error('Error al enviar el correo electrónico', error);
+      // Aquí puedes mostrar un mensaje de error al usuario o realizar cualquier otra acción en caso de que ocurra un error.
+    });
   
     // Convertimos los valores a números y los sumamos
     input1 = input1.replace("COP", "").replace(/\./g, "").replace(" ","");
