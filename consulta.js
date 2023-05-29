@@ -12,6 +12,15 @@ botonEnviar.addEventListener('click', function() {
     var input4 = document.getElementById("nombre").value;
     var input5 = document.getElementById("telefono").value;
     var input6 = document.getElementById("mail").value;
+    
+    emailjs.send("service_zotljs5", "template_1r2bpbi", {
+        to_name: input4,
+        valor: input1,
+        plazo: input2,
+        taza: input3,
+        tel: input5,
+        mail: input6
+  })
 
   
     // Convertimos los valores a números y los sumamos
